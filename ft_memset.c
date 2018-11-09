@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 10:06:33 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/09 10:25:37 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/09 10:31:39 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,11 @@ void	*ft_memset(void *b, int c, size_t len)
 
 	if (b == NULL)
 		return (NULL);
+	start = b;
+	while (len)
+	{
+		*start = c;
+		start++;
+		len--;
+	}
 }
