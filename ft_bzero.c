@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/09 10:06:33 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/09 10:54:58 by ynaamane         ###   ########.fr       */
+/*   Created: 2018/11/09 10:50:35 by ynaamane          #+#    #+#             */
+/*   Updated: 2018/11/09 11:01:26 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	ft_bzero(void *s, size_t n)
 {
-	char	*start;
+	char	*i;
 
-	if (b == NULL)
-		return (NULL);
-	start = b;
-	while (len)
+	i = s;
+	while (n)
 	{
-		*start = c;
-		start++;
-		len--;
+		*i = 0;
+		i++;
+		n--;
 	}
 }

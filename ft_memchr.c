@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ynaamane <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/09 10:06:33 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/09 10:54:58 by ynaamane         ###   ########.fr       */
+/*   Created: 2018/11/12 12:57:58 by ynaamane          #+#    #+#             */
+/*   Updated: 2018/11/12 13:56:37 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char	*start;
+	size_t		i;
+	unsigned char		*string;
 
-	if (b == NULL)
+	if (s == NULL)
 		return (NULL);
-	start = b;
-	while (len)
+	i = 0;
+	string = (unsigned char *)s;
+	while (i < n)
 	{
-		*start = c;
-		start++;
-		len--;
+		if (string[i] == (unsigned char)c)
+			return ((void *)(string + i));
+		i++;
 	}
+	return (NULL);
 }
