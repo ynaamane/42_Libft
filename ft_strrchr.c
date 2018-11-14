@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ynaamane <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/09 13:43:58 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/14 16:03:45 by ynaamane         ###   ########.fr       */
+/*   Created: 2018/11/14 17:13:19 by ynaamane          #+#    #+#             */
+/*   Updated: 2018/11/14 17:22:47 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strncpy(char *dst, const char *src, size_t len)
+char	*strrchr(const char *s, int c)
 {
-	size_t		i;
+	int		i;
+	char	*t;
 
 	i = 0;
-	while (i < len && src[i])
+	t = NULL;
+	while (s[i] != '\0')
 	{
-		dst[i] = src[i];
+		if (s[i] == (char)c)
+			t = ((char *)&s[i]);
 		i++;
 	}
-	while (i < len)
-	{
-		dst[i] = '\0';
-		i++;
-	}
-	return (dst);
+	if (s[i] == (char)c)
+		t = ((char *)&s[i]);
+	return (t); 
 }
