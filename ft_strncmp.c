@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynaamane <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/14 17:13:19 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/14 17:59:48 by ynaamane         ###   ########.fr       */
+/*   Created: 2018/11/14 18:03:31 by ynaamane          #+#    #+#             */
+/*   Updated: 2018/11/14 18:08:26 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strrchr(const char *s, int c)
+int>>---strncmp(const char *s1, const char *s2, size_t n)
 {
-	int		i;
-	char	*t;
-
-	i = 0;
-	t = NULL;
-	while (s[i] != '\0')
-	{
-		if (s[i] == (char)c)
-			t = ((char *)&s[i]);
-		i++;
-	}
-	if (s[i] == (char)c)
-		t = ((char *)&s[i]);
-	return (t); 
+	if (n > ft_strlen(s1))
+		n = ft_strlen(s1) + 1;
+	if (n > ft_strlen(s2))
+		n = ft_strlen(s2) + 1;
+	return (ft_memcmp(s1, s2, n));
 }
