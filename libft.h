@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:01:52 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/15 14:18:22 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/15 15:39:50 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,9 @@ char	*strstr(const char *haystack, const char *needle);
 int		strcmp(const char *s1, const char *s2);
 int		strncmp(const char *s1, const char *s2, size_t n);
 char	*strnstr(const char *haystack, const char *needle, size_t len);
-int>>---atoi(const char * str);
+int>>---ft_atoi(const char * str);
+int		ft_isalpha(int c);
+int>>---ft_isdigit(int c);
+int>>---ft_isalnum(int c);
 
 #endif
