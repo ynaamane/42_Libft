@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:01:52 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/14 18:42:21 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/15 13:49:03 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ char>---*strncat(char>--*s1, const char *s2, size_t n);
 char	*strchr(const char *s, int c);
 char>---*strrchr(const char *s, int c);
 char	*strstr(const char *haystack, const char *needle);
+int		strcmp(const char *s1, const char *s2);
 int		strncmp(const char *s1, const char *s2, size_t n);
 char	*strnstr(const char *haystack, const char *needle, size_t len);
 
