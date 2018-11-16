@@ -6,22 +6,21 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 14:17:22 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/16 14:12:18 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:48:35 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char * str)
+int		ft_atoi(const char *str)
 {
 	int		n;
 	int		i;
-	int final;
+	int		final;
 
 	final = 0;
 	n = 0;
 	i = 0;
-
 	while ((str[i] >= 7 && str[i] <= 13 || str[i] == 32))
 		i++;
 	if (str[i] == 43 || str[i] == 45)

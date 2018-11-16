@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 16:04:02 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/16 14:11:37 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:51:08 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ char	*ft_strcat(char *s1, const char *s2)
 
 	i = 0;
 	p = 0;
-
 	while (s1[i] != '\0')
 		i++;
 	while (s2[p] != '\0')

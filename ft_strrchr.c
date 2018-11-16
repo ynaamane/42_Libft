@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 17:13:19 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/16 14:18:45 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:53:26 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	if (s[i] == (char)c)
 		t = ((char *)&s[i]);
-	return (t); 
+	return (t);
 }

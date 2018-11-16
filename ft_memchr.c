@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ynaamane <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 12:57:58 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/12 13:56:37 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:49:44 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		i;
-	unsigned char		*string;
+	size_t			i;
+	unsigned char	*string;
 
 	if (s == NULL)
 		return (NULL);

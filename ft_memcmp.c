@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 15:17:24 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/16 14:13:08 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:50:53 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,16 +19,15 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	string1 = (unsigned const char*)s1;
 	string2 = (unsigned const char*)s2;
-
 	if (string1 == NULL || string2 == NULL)
 		return (0);
 	while (n)
 	{
 		if (*string1 != *string2)
 			return (*string1 - *string2);
-	string1++;
-	string2++;
-	n--;
+		string1++;
+		string2++;
+		n--;
 	}
 	return (0);
 }
