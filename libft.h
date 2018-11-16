@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:01:52 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/16 13:49:05 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:21:09 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s1);
 char	*ft_strcat(char*s1, const char *s2);
-char	*strncat(char *s1, const char *s2, size_t n);
-char	*strchr(const char *s, int c);
-char	*strrchr(const char *s, int c);
-char	*strstr(const char *haystack, const char *needle);
-int		strcmp(const char *s1, const char *s2);
-int		strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strncat(char *s1, const char *s2, size_t n);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+char	*ft_strstr(const char *haystack, const char *needle);
+int		ft_strcmp(const char *s1, const char *s2);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char * str);
 int		ft_isalpha(int c);
