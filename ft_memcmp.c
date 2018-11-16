@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ynaamane <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/13 15:17:24 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/13 15:50:01 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:13:08 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int>>---ft_memcmp(const void *s1, const void *s2, size_t n)
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned const char		*string1;
 	unsigned const char		*string2;

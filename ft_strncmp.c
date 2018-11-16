@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ynaamane <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 18:03:31 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/14 18:08:26 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:15:14 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int>>---strncmp(const char *s1, const char *s2, size_t n)
+int		strncmp(const char *s1, const char *s2, size_t n)
 {
 	if (n > ft_strlen(s1))
 		n = ft_strlen(s1) + 1;

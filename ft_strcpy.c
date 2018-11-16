@@ -6,13 +6,13 @@
 /*   By: ynaamane <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 15:06:13 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/14 18:40:20 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 13:53:51 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-i
+
 #include "libft.h"
 
-char>---*ft_strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int		i;
 

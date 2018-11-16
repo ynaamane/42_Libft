@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ynaamane <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 16:04:02 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/14 16:13:13 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:11:37 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ char	*ft_strcat(char *s1, const char *s2)
 
 	while (s1[i] != '\0')
 		i++;
-	while (s2[p] !+ '\0')
+	while (s2[p] != '\0')
 	{
-		dest[i + p] = s2[p];
+		s1[i + p] = s2[p];
 		p++;
 	}
 	s1[i + p] = '\0';

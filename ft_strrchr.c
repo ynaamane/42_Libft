@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ynaamane <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 17:13:19 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/14 17:59:48 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:18:45 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
 	char	*t;

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ynaamane <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/15 14:17:22 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/15 15:03:14 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:12:18 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		atoi(const char * str)
+int		ft_atoi(const char * str)
 {
 	int		n;
 	int		i;
@@ -33,7 +33,7 @@ int		atoi(const char * str)
 	while (str[i] >= 48 && str[i] <= 57)
 	{
 		final *= 10;
-		final = final + str[i] - 48
+		final = final + str[i] - 48;
 	}
 	return (n * final);
 }
