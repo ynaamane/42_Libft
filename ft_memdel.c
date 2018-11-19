@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 10:37:56 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/19 10:40:30 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/19 12:27:58 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,9 @@
 
 void	ft_memdel(void **ap)
 {
-
+	if (ap != NULL)
+	{
+		free(*ap);
+		*ap = NULL;
+	}
 }
