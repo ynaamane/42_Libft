@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/19 12:29:23 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/19 12:36:22 by ynaamane         ###   ########.fr       */
+/*   Created: 2018/11/19 12:34:28 by ynaamane          #+#    #+#             */
+/*   Updated: 2018/11/19 12:39:22 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char	*ft_strnew(size_t size)
+void	ft_strdel(char **as)
 {
-	char	*str;
-
-	str = ft_memalloc(size);
-	return (str);
+	if (as != NULL)
+	{
+		free(*as);
+		*as = NULL;
+	}
 }
