@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:01:52 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/20 12:32:35 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/20 13:34:23 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,7 @@ int		ft_strequ(char const *s1, char const *s2);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s);
+char	**ft_strsplit(char const *s, char c);
 
 #endif
