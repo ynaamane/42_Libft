@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:01:52 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/21 13:16:11 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/21 16:40:07 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,5 +59,6 @@ char		*ft_strtrim(char const *s);
 char		**ft_strsplit(char const *s, char c);
 static int	ft_strlenlim(char *s, char c);
 static int	ft_nbwords(char *s, char c);
+char	*ft_itoa(int n);
 
 #endif
