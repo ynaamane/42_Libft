@@ -6,12 +6,11 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 12:34:28 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/19 12:39:22 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/22 15:26:07 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	ft_strdel(char **as)
 {

@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmap.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/19 14:27:09 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/22 15:26:34 by ynaamane         ###   ########.fr       */
+/*   Created: 2018/11/22 15:08:27 by ynaamane          #+#    #+#             */
+/*   Updated: 2018/11/22 15:26:01 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmap(char const *s, char (*f)(char))
+inline static void	putlong(long n, int fd)
 {
-	int		i;
-	char	*result;
+	if (n >= 10)
+		putlong(n / 10, fd);
+	ft_putchar_fd(n % 10 + '0', fd);
+}
 
-	i = 0;
-	if (s == NULL || f == NULL)
-		return (NULL);
-	result = ft_memalloc(ft_strlen(s));
-	ft_strcpy(result, s);
-	while (result[i])
+void				ft_putnbr_fd(int n, int fd)
+{
+	long	v;
+	v = n;
+	if (v < 0)
 	{
-		result[i] = (*f)(result[i]);
-		i++;
+		ft_putchar_fd('-', fd);
+		v = -v;
 	}
-	return (result);
+	putlong(v, fd);
 }

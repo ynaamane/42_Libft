@@ -6,12 +6,11 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 13:33:14 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/21 13:16:08 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/22 15:26:50 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static int	ft_nbwords(char *s, char c)
 {

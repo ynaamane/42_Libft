@@ -6,12 +6,11 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 10:37:56 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/19 12:27:58 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/22 15:26:20 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	ft_memdel(void **ap)
 {

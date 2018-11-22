@@ -6,12 +6,11 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 12:44:17 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/20 13:24:34 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/22 15:26:57 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strtrim(char const *s)
 {

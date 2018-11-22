@@ -6,12 +6,11 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 16:30:24 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/21 16:40:06 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/22 15:26:13 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_itoa(int n)
 {

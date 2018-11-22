@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmap.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/19 14:27:09 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/22 15:26:34 by ynaamane         ###   ########.fr       */
+/*   Created: 2018/11/22 14:55:04 by ynaamane          #+#    #+#             */
+/*   Updated: 2018/11/22 14:59:03 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmap(char const *s, char (*f)(char))
+void	ft_putnbr(int n)
 {
-	int		i;
-	char	*result;
-
-	i = 0;
-	if (s == NULL || f == NULL)
-		return (NULL);
-	result = ft_memalloc(ft_strlen(s));
-	ft_strcpy(result, s);
-	while (result[i])
-	{
-		result[i] = (*f)(result[i]);
-		i++;
-	}
-	return (result);
+	write(1, &n, 1);
 }
