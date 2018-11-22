@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:01:52 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/22 15:27:17 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/22 16:54:49 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,7 @@ void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
 inline static void	putlong(long n, int fd);
 void				ft_putchar_fd(char c, int fd);
+void				ft_putstr_fd(char const *s,int fd);
+void				ft_putendl_fd(char const *s, int fd);
 
 #endif
