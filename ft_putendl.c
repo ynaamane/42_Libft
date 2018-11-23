@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 17:08:33 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/22 13:54:30 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/23 13:11:39 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putendl(char const *s)
 {
 	ft_putstr(s);
-	write(1, '\n', 1);
+	write(1, "\n", 1);
 }

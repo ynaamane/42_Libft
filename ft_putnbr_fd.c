@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/22 15:08:27 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/22 15:26:01 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/23 13:23:05 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ inline static void	putlong(long n, int fd)
 void				ft_putnbr_fd(int n, int fd)
 {
 	long	v;
+
 	v = n;
 	if (v < 0)
 	{

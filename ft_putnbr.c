@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/22 14:55:04 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/22 16:23:12 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/23 13:20:16 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putnbr(int n)
 {
-	ft_putnbr_fd(n, 1); 
+	ft_putnbr_fd(n, 1);
 }

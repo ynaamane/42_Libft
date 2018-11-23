@@ -6,13 +6,13 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/22 16:50:12 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/22 16:52:13 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/23 13:20:27 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char const *s,int fd)
+void	ft_putstr_fd(char const *s, int fd)
 {
 	write(fd, s, ft_strlen(s));
 }
