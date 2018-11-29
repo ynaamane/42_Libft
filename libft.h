@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:01:52 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/29 14:28:34 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/29 15:22:26 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,6 @@ void				ft_putnbr_fd(int n, int fd);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putendl_fd(char const *s, int fd);
+size_t				ft_strlcat(char *dst, const char *src, size_t size);
 
 #endif

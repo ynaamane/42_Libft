@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 17:31:22 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/22 15:26:53 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/29 15:24:57 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,5 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		i2++;
 	}
 	result[i2] = '\0';
+	return (result);
 }
