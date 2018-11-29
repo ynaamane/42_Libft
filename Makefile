@@ -6,12 +6,12 @@
 #    By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/23 15:50:12 by ynaamane          #+#    #+#              #
-#    Updated: 2018/11/29 15:56:18 by ynaamane         ###   ########.fr        #
+#    Updated: 2018/11/29 17:11:19 by ynaamane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft
-FLAGS = -Wall -Wextra - Werror
+FLAGS = -Wall -Wextra -Werror
 SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c \
 ft_strncpy.c ft_strcpy.c ft_memchr.c ft_memcmp.c ft_strlen.c ft_strdup.c \
 ft_strcat.c ft_strncat.c ft_strchr.c ft_strstr.c ft_strcmp.c ft_strnstr.c \
@@ -30,7 +30,7 @@ $(NAME): $(OBJ)
 				ranlib $(NAME).a
 
 %.o: %.c
-				$(CC) $(CFLAGS) -c $< -o $@
+				$(CC) $(FLAGS) -c $< -o $@
 
 all: $(NAME)
 

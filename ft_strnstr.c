@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 18:41:13 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/29 14:02:17 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/29 17:16:23 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,16 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	i = 0;
 	if (needle == NULL || ft_strlen(needle) == 0)
-		return ((char *)needle);
+		return ((char *)haystack);
 	if (ft_strlen(needle) > len)
 		return (NULL);
 	while (i < len)
 	{
-		if (ft_strncmp((char *)&needle[i], needle, ft_strlen(needle)) == 0)
+		if (ft_strncmp((char *)&haystack[i], needle, ft_strlen(needle)) == 0)
 		{
 			if (i + ft_strlen(needle) > len)
 				return (NULL);
-			return ((char *)&needle[i]);
+			return ((char *)&haystack[i]);
 		}
 		i++;
 	}
