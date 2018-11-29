@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 16:43:12 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/16 14:13:54 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/29 14:00:37 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	int		i;
 
 	i = 0;
-	if (s = NULL)
+	if (s == NULL)
 		return (NULL);
 	while (s[i])
 	{
