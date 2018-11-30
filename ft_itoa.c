@@ -6,37 +6,41 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 16:30:24 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/22 15:26:13 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 16:44:32 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+static size_t	get_str_len(int n)
 {
-	char	*number;
+	size_t		i;
 
-	number = (char *)ft_memalloc(10);
-	if (n >= 0 && number)
+	i = 1;
+	while (n /= 10)
+		i++;
+	return (i);
+}
+
+char				*ft_itoa(int n)
+{
+	char			*str;
+	size_t			str_len;
+	unsigned int	n_cpy;
+
+	str_len = get_str_len(n);
+	n_cpy = n;
+	if (n < 0)
 	{
-		*--number = '0' + (n % 10);
-		n /= 10;
-		while (n != 0)
-		{
-			*--number = '0' + (n & 10);
-			n /= 10;
-		}
+		n_cpy = -n;
+		str_len++;
 	}
-	else if (number)
-	{
-		*--number = '0' - (n % 10);
-		n /= 10;
-		while (n != 0)
-		{
-			*--number = '0' - (n % 10);
-			n /= 10;
-		}
-		*--number = '-';
-	}
-	return (ft_strdup(number));
+	if (!(str = ft_strnew(str_len)))
+		return (NULL);
+	str[--str_len] = n_cpy % 10 + '0';
+	while (n_cpy /= 10)
+		str[--str_len] = n_cpy % 10 + '0';
+	if (n < 0)
+		*(str + 0) = '-';
+	return (str);
 }
