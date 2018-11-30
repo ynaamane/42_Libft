@@ -6,16 +6,11 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 13:33:14 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/30 12:31:08 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 12:32:12 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	free_it(int *tab, int w)
-{
-
-}
 
 static int	ft_nbwords(char *s, char c)
 {
