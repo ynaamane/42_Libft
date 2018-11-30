@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 13:33:14 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/30 12:49:05 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 12:53:51 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ static void	free_it(void **tab, int x)
 		i++;
 	}
 	free(tab);
+	return (NULL);
 }
 
 static int	ft_nbwords(char *s, char c)
@@ -66,7 +67,7 @@ char		**ft_strsplit(char const *s, char c)
 	int		i;
 
 	if (!s)
-		return (free_it((void **)tab, c));
+		return (free_it(tab, c));
 	nb_ofwords = ft_nbwords((char *)s, c);
 	tab = (char **)malloc((nb_ofwords + 1) * sizeof(char*));
 	i = 0;
