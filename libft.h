@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:01:52 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/30 13:26:43 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 14:01:08 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdint.h>
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
