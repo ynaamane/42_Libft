@@ -6,23 +6,23 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 13:33:14 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/30 12:53:51 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 13:01:23 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	free_it(void **tab, int x)
+static void	*free_it(char **tab, int x)
 {
 	int		i;
 
 	i = 0;
 	while (i < x)
 	{
-		ft_memdel(&tab[i]);
+		ft_memdel((void **)&tab[i]);
 		i++;
 	}
-	free(tab);
+	ft_memdel((void **)tab);
 	return (NULL);
 }
 
@@ -67,7 +67,7 @@ char		**ft_strsplit(char const *s, char c)
 	int		i;
 
 	if (!s)
-		return (free_it(tab, c));
+		return (NULL);
 	nb_ofwords = ft_nbwords((char *)s, c);
 	tab = (char **)malloc((nb_ofwords + 1) * sizeof(char*));
 	i = 0;
@@ -79,7 +79,7 @@ char		**ft_strsplit(char const *s, char c)
 			s++;
 		tab[i] = ft_strsub((char *)s, 0, ft_strlenlim((char *)s, c));
 		if (!tab[i])
-			return (NULL);
+			return (free_it(tab, c);
 		s = s + ft_strlenlim((char *)s, c);
 		i++;
 	}
