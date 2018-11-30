@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 12:44:17 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/23 13:23:52 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 14:24:16 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ char	*ft_strtrim(char const *s)
 	if (s == NULL)
 		return (NULL);
 	i[0] = 0;
-	result = ft_memalloc(ft_strlen(s));
+	if (result = ft_memalloc(ft_strlen(s)) == NULL)
+		return (NULL);
 	ft_memcpy(result, s, ft_strlen(s));
 	while (result[i[0]] && (result[i[0]] == ' ' ||
 	result[i[0]] == '\n' || result[i[0]] == '\t'))
