@@ -6,11 +6,16 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 13:33:14 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/29 15:30:07 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 12:31:08 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	free_it(int *tab, int w)
+{
+
+}
 
 static int	ft_nbwords(char *s, char c)
 {
@@ -52,7 +57,7 @@ char		**ft_strsplit(char const *s, char c)
 	char	**tab;
 	int		i;
 
-	if (!s)
+	if (s == NULL)
 		return (NULL);
 	nb_ofwords = ft_nbwords((char *)s, c);
 	tab = (char **)malloc((nb_ofwords + 1) * sizeof(char*));
