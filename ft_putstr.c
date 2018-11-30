@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 17:05:21 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/21 17:07:02 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 13:44:31 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,5 @@
 
 void	ft_putstr(char const *s)
 {
-	int		i;
-
-	i = 0;
-	while (s[i])
-	{
-		ft_putchar(s[i]);
-		i++;
-	}
+	ft_putstr_fd(s, 1);
 }
