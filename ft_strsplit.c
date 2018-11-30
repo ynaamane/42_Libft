@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 13:33:14 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/30 13:01:23 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 13:03:09 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ char		**ft_strsplit(char const *s, char c)
 			s++;
 		tab[i] = ft_strsub((char *)s, 0, ft_strlenlim((char *)s, c));
 		if (!tab[i])
-			return (free_it(tab, c);
+			return (free_it(tab, c));
 		s = s + ft_strlenlim((char *)s, c);
 		i++;
 	}
