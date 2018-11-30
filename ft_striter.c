@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 13:17:20 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/19 13:31:03 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 11:01:20 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,9 @@ void	ft_striter(char *s, void (*f)(char *))
 	int		i;
 	int		i2;
 
-	i = 0;
-	i2 = 0;
 	if (s != NULL && f != NULL)
 	{
+		i2 = 0;
 		i = ft_strlen(s);
 		while (i2 < i)
 		{
