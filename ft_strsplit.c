@@ -6,13 +6,13 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/20 13:33:14 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/30 12:46:19 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/11/30 12:47:59 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	free_it(char **tab, int x)
+static void	free_it(void **tab, int x)
 {
 	int		i;
 
