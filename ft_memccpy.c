@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/09 11:50:11 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/30 14:16:40 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/12/03 09:45:24 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	size_t		i;
-	unsigned char		*dest;
-	unsigned char		*sourc;
+	size_t			i;
+	unsigned char	*dest;
+	unsigned char	*sourc;
 
 	i = 0;
 	dest = (unsigned char *)dst;

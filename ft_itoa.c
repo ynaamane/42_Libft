@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 16:30:24 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/30 16:44:32 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/12/03 09:43:49 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static size_t	get_str_len(int n)
 	return (i);
 }
 
-char				*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	char			*str;
 	size_t			str_len;
