@@ -6,7 +6,7 @@
 /*   By: ynaamane <ynaamane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/19 17:31:22 by ynaamane          #+#    #+#             */
-/*   Updated: 2018/11/30 14:58:51 by ynaamane         ###   ########.fr       */
+/*   Updated: 2018/12/03 12:53:36 by ynaamane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,21 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	size_t		i;
-	size_t		i2;
+	size_t		length;
 	char		*result;
 
-	i = start;
-	i2 = 0;
-	if (s == NULL || len == 0 || s[start] == '\0')
+	if (s == NULL)
 		return (NULL);
-	if ((result = ft_memalloc(sizeof(char) * len)) == NULL)
-		return (NULL);
-	while (i2 < len && s[i])
+	length = ft_strlen(s);
+	result = NULL;
+	if ((start + len) <= length)
 	{
-		result[i2] = (char)s[i];
-		i++;
-		i2++;
+		result = (char *)malloc(sizeof(char) * (len + 1));
+		if (result)
+		{
+			result = ft_strncpy(result, s + start, len);
+			result[len] = '\0';
+		}
 	}
-	result[i2] = '\0';
 	return (result);
 }
